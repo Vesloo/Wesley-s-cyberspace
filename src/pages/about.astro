@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+  title="À propos"
+  description="Qui se cache derrière Wesley's Cyberspace ?"
+  pubDate={new Date('2025-08-08')}
+>
+  <section class="prose prose-invert prose-emerald max-w-none">
+    <h2 class="text-emerald-400">Salut, moi c’est Wesley 👋</h2>
+
+    <p>
+      Pentester en devenir, passionné de cybersécurité et de développement.
+      J’écris mes write-ups de machines HTB / THM / Vulnhub et je partage mes astuces
+      sur les outils que j’utilise au quotidien.
+    </p>
+
+    <h3 class="text-emerald-400">Ma stack & outils</h3>
+    <ul>
+      <li><strong>Pentest :</strong> Parrot OS, Enumeration (Footprinting, OSINT, Scans), Exploitation (Reverse shell, SQL injection, XSS), Privileges escalation</li>
+      <li><strong>Dev :</strong> Astro, React, Node (Nest JS, TypeORM), MySQL, SQLite, PostgreSQL, HTML/CSS, Typescript</li>
+      <li><strong>Deploiement :</strong> GitHub, Git, Vercel</li>
+    </ul>
+
+    <!-- <h3 class="text-emerald-400">Certifications en cours</h3>
+    <ul>
+      <li>eJPT (Juin 2025)</li>
+      <li>OSCP (objectif 2026)</li>
+    </ul> -->
+
+	<h3>Mon portfolio: <a href="http://localhost">Wesley</a></h3>
+    <blockquote class="border-l-4 border-emerald-500 pl-4 italic">
+      « Le meilleur moyen d’apprendre est de partager. »
+    </blockquote>
+  </section>
+</Layout>
