@@ -1,14 +1,13 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import vercel from '@astrojs/vercel/static';
-import sitemap from '@astrojs/sitemap';  // <-- ajoute cette ligne
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://wesley-cyberspace.vercel.app',        // ou ton domaine final
-  trailingSlash: 'never',
+  site: 'https://wesley-cyberspace.vercel.app' || 'http://localhost:4321', 
   integrations: [
     tailwind(),
-    sitemap(),                          // maintenant OK
+    sitemap(),
   ],
   output: 'static',
   adapter: vercel(),
