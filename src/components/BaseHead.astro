@@ -58,3 +58,22 @@ const { title, description, image = FallbackImage } = Astro.props;
 
 <!-- Google tags -->
 <meta name="google-site-verification" content="mVY4hLaUkpxy6bXB7cfa7X17_o9WeLi5LleMp9mxfvk" />
+
+<!-- Micro données -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": SITE_TITLE,
+  "url": Astro.site,
+  "description": "Mes write-ups HTB / THM / Vulnhub et mes astuces dev",
+  "publisher": {
+    "@type": "Person",
+    "name": "Wesley P.",
+    "url": Astro.site,
+    "sameAs": [
+      "https://github.com/Vesloo",
+      "https://www.linkedin.com/in/wesley-p-968768220/"
+    ]
+  },
+  "inLanguage": "fr"
+})} />
